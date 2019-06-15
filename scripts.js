@@ -1,4 +1,28 @@
-var count = 1;
+    var width = $(window).width();
+    addContainerClass(width);
+    $(window).on('resize', function() {
+        if ($(this).width() != width) {
+            width = $(this).width();
+            console.log(width);
+        }
+        addContainerClass(width);
+    });
+
+    function addContainerClass(width) {
+        if (width > 1024) {
+            $("main").addClass("container");
+        } else {
+            $("main").removeClass("container");
+        }
+    }
+
+    function updateBCBF() {
+        var num = $("#aboutme-cont").outerHeight(true);
+        $("#bcbf img").height(num);
+        $("#bcbf img").width(num);
+    }
+
+    var count = 1;
     var length = 1500;
     var loopTitleTimer = setInterval(loopTitle, length);
     var timerOn = true;
