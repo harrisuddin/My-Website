@@ -1,5 +1,5 @@
     var width = $(window).width();
-    addContainerClass(width);
+    updateContainer(width);
     updateBCBF(width);
     updateCodeImage(width);
     $("#test").text(width);
@@ -10,12 +10,12 @@
 //            $("#test").text(width); testing
         }
 //        location.reload()
-        addContainerClass(width);
+        updateContainer(width);
         updateBCBF(width);
         updateCodeImage(width);
     });
 
-    function addContainerClass(width) {
+    function updateContainer(width) {
         if (width >= 1300) {
             $("main").addClass("container");
         } else {
