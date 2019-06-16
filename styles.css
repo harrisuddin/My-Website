@@ -48,9 +48,11 @@ main {
     #bcbf {
         width: 100% !important;
     }
+/*
     #code-image {
         height: 213px !important;
     }
+*/
 
 }
 @media screen and (min-width: 375px) {
@@ -66,9 +68,11 @@ main {
     #title h1 {
         font-size: 2rem;
     }
+/*
     #code-image {
         height: 285px !important;
     }
+*/
 }
 @media screen and (min-width: 768px) {
     #android {
@@ -78,34 +82,56 @@ main {
     #title h1 {
         font-size: 2.5rem;
     }
+/*
     #code-image {
         height: 512px !important;
     }
+*/
+/*
     #aboutme-cont {
         width: 50% !important;
     }
+*/
+/*
     #aboutme-cont h5 {
         font-size: 1rem;
     }
+*/
+/*
     #bcbf {
         width: 50% !important;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
+*/
     #bcbf img {
         width: 384px;
         height: 384px;
     }
 }
+
+@media screen and (min-width: 793px) {
+/*
+    #aboutme-cont {
+        width: 60% !important;
+    }
+    #bcbf {
+        width: 40% !important;
+    }
+*/
+}
+
 @media screen and (min-width: 990px) {
     .navbar-nav {
         margin-left: auto;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1005px) {
+/*
     #code-image {
         height: 682px !important;
     }
+*/
     #aboutme-cont {
         width: 60% !important;
     }
@@ -113,24 +139,29 @@ main {
         width: 40% !important;
         margin: 0;
     }
+/*
     #bcbf img {
         width: 280px;
         height: 280px;
 
     }
+*/
 }
 @media screen and (min-width: 1025px) {
+/*
     #bcbf img {
         width: 298.67px;
         height: 298.67px;
 
     }
+*/
 }
 @media screen and (min-width: 1440px) {
     #android {
         height: 8%;
         width: 8%;
     }
+/*
     #bcbf img {
         width: 261px;
         height: 261px;
@@ -139,6 +170,7 @@ main {
     #code-image {
         height: 710px !important;
     }
+*/
 }
 nav span, nav a {
     color: white !important;
@@ -185,11 +217,12 @@ nav span, nav a {
 /*    height: 100%;*/
 }
 
+/*
 #aboutme-cont {
     width: 65%;
-/*    height: 23rem;*/
+    height: 23rem;
 }
 
 #bcbf {
     width: 35%;
-}
+}*/
