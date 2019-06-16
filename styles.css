@@ -172,6 +172,12 @@ main {
     }
 */
 }
+@media screen and (min-width: 1800px) {
+    #android {
+        height: 5%;
+        width: 5%;
+    }
+}
 nav span, nav a {
     color: white !important;
 }

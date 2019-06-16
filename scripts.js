@@ -2,19 +2,25 @@
     updateContainer(width);
     updateBCBF(width);
     updateCodeImage(width);
-    $("#test").text(width);
+    $("#test").text(width); //testing
+
+    //when the window resizes
     $(window).on('resize', function() {
         if ($(this).width() != width) {
             width = $(this).width();
-            console.log(width);
-//            $("#test").text(width); testing
+            $("#test").text(width); //testing temporary
+            updateContainer(width);
+            updateBCBF(width);
+            updateCodeImage(width);
         }
-//        location.reload()
-        updateContainer(width);
-        updateBCBF(width);
-        updateCodeImage(width);
+
+        // this reloads the page when the page width is <= 370 to make sure the bcbf image loads at the right height/width
+        if (width <= 370) {
+            location.reload();
+        }
     });
 
+    // if the width is >= 1300 then add the container class, if not then remove it
     function updateContainer(width) {
         if (width >= 1300) {
             $("main").addClass("container");
@@ -23,28 +29,30 @@
         }
     }
 
+    // update the height/width of the bcbf image when the page width is >= 1005
     function updateBCBF(widthNum) {
-        if (widthNum >= 1005) { //&& widthNum <= 1024
-            var aboutmeWidth = $("#aboutme-cont").outerHeight(true);
-
-            if ($(window).width() < aboutmeWidth + $("#aboutme-cont").outerWidth(true)) {
-                var diff = (aboutmeWidth + $("#aboutme-cont").outerWidth(true)) - $(window).width();
-                aboutmeWidth = aboutmeWidth - diff;
+        if (widthNum >= 1005) {
+            // set aboutMeHeight to the height of the about me continued section
+            var aboutMeHeight = $("#aboutme-cont").outerHeight(true);
+            // set aboutMeWidth to the width of the about me continued section
+            var aboutMeWidth = $("#aboutme-cont").outerWidth(true);
+            // if the window width is less that about me width and height combined
+            if ($(window).width() < (aboutMeHeight + aboutMeWidth)) {
+                // set diff to the difference between about me width + height and the window width
+                var diff = (aboutMeHeight + aboutMeWidth) - $(window).width();
+                // take the difference from about me height
+                aboutMeHeight = aboutMeHeight - diff;
             }
-
-//            $("#aboutme-cont").addClass("width-60");
-//            $("#bcbf").addClass("width-40");
-//            $("#bcbf img").css("margin-top", "0");
-            $("#bcbf img").height(aboutmeWidth);
-            $("#bcbf img").width(aboutmeWidth);
-//            $("#test").text(width + "Yep"); // testing
-
+            // set the height and width of the bcbf image to about me height
+            $("#bcbf img").height(aboutMeHeight);
+            $("#bcbf img").width(aboutMeHeight);
         }
     }
 
+    // automatically update the code image height inline with its aspect ratio
     function updateCodeImage(widthNum) {
         var codeWidth = $("#code-image").outerWidth(true);
-        var codeHeight = 4000 / (6000/codeWidth);
+        var codeHeight = 4000 / (6000 / codeWidth);
         $("#code-image").height(codeHeight);
     }
 
