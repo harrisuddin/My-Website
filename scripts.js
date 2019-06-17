@@ -52,7 +52,7 @@
     // automatically update the code image height inline with its aspect ratio
     function updateCodeImage(widthNum) {
         var codeWidth = $("#code-image").outerWidth(true);
-        var codeHeight = 4000 / (6000 / codeWidth);
+        var codeHeight = 2000 / (3000 / codeWidth);
         $("#code-image").height(codeHeight);
     }
 
