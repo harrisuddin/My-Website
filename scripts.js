@@ -5,7 +5,7 @@
     $("#test").text(width); //testing
 
     //when the window resizes
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         if ($(this).width() != width) {
             width = $(this).width();
             $("#test").text(width); //testing temporary
@@ -62,7 +62,7 @@
     var timerOn = true;
 
     // every 1.5 seconds, loop through each of the titles
-    function loopTitle( ) {
+    function loopTitle() {
 
         if (count == 1) {
             document.getElementById("loop-title").innerHTML = "<img src='android_char6.png' alt='Android Logo' id='android'/> apps are my thing...";
@@ -78,7 +78,7 @@
     }
 
     // when the title element is clicked then it will start/stop looping through the titles
-    $("#title").click(function() {
+    $("#title").click(function () {
 
         if (timerOn) {
             clearInterval(window.loopTitleTimer);
@@ -91,14 +91,18 @@
 
     $("#code-image-container").hover(
 
-        function() {
+        function () {
             // when hovering
             $("#code-image-credit").show();
-            $("#code-image").css({ opacity: 0.8 });
+            $("#code-image").css({
+                opacity: 0.95
+            });
         },
-        function() {
+        function () {
             //when stop hovering
             $("#code-image-credit").hide();
-            $("#code-image").css({ opacity: 1 });
+            $("#code-image").css({
+                opacity: 1
+            });
         }
     );

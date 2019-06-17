@@ -3,23 +3,29 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #title {
     text-align: center;
     margin-top: 3em;
     cursor: pointer;
     padding: 0.5em;
 }
+
 #web {
     font-family: 'Source Code Pro', monospace;
     color: #1290FF;
     font-size: bold;
 }
+
 .link {
     color: black;
+    transition: 0.5s
 }
+
 .link:hover {
     color: #949494;
 }
+
 main {
     word-wrap: break-word;
     width: 100%;
@@ -27,85 +33,107 @@ main {
     margin-left: auto;
     margin-top: 8em;
 }
+
 #android {
     height: 8%;
     width: 8%;
 }
+
 @media screen and (min-width: 320px) {
     #android {
         height: 20%;
         width: 20%;
     }
+
     #title h1 {
         font-size: 1.5rem;
     }
+
     #aboutme-cont {
         width: 100% !important;
     }
+
     #bcbf {
         width: 100% !important;
     }
 }
+
 @media screen and (min-width: 375px) {
     #title h1 {
         font-size: 1.8rem;
     }
 }
+
 @media screen and (min-width: 425px) {
     #android {
         height: 15%;
         width: 15%;
     }
+
     #title h1 {
         font-size: 2rem;
     }
 }
+
 @media screen and (min-width: 768px) {
     #android {
         height: 9%;
         width: 9%;
     }
+
     #title h1 {
         font-size: 2.5rem;
     }
+
     #bcbf img {
         width: 384px;
         height: 384px;
     }
 }
+
 @media screen and (min-width: 990px) {
     .navbar-nav {
         margin-left: auto;
     }
 }
+
 @media screen and (min-width: 1005px) {
     #aboutme-cont {
         width: 60% !important;
     }
+
     #bcbf {
         width: 40% !important;
         margin: 0;
     }
 }
+
 @media screen and (min-width: 1440px) {
     #android {
         height: 8%;
         width: 8%;
     }
 }
+
 @media screen and (min-width: 1800px) {
     #android {
         height: 5%;
         width: 5%;
     }
 }
-#top-nav span, #top-nav a {
+
+#top-nav span,
+#top-nav a {
     color: white !important;
 }
+
 #top-nav {
-    background-color: black; /*#1c1c1c*/
+    background-color: black;
+    /*#1c1c1c*/
 }
-#pic-title div { /*change div to img later*/
+
+#pic-title div {
+    /*change div to img later*/
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -113,26 +141,37 @@ main {
     width: 100px;
     height: 100px;
 }
+
 #pic-title {
     height: 16.25em;
     margin-top: 8em;
 }
+
 .white-text {
     color: white;
 }
+
 .text-image-container {
     height: 100%;
 }
+
 .text-image-container-text {
     width: 100%;
     padding: 1.5rem 1.5rem;
 }
+
 .text-image-container-text .link {
     color: #949494;
 }
+
+.text-image-container-text .link:hover {
+    color: white !important;
+}
+
 .lato {
     font-family: 'Lato', sans-serif;
 }
+
 .text-image-container-image {
     width: 100%;
     float: right;
@@ -140,29 +179,50 @@ main {
     display: block;
     margin: auto;
 }
+
 .black-grey {
     background-color: #1c1c1c;
     color: #949494;
 }
+
 footer {
     height: 100%;
     width: 100%;
     word-wrap: break-word;
-    margin: 0 auto;
 }
+
 #footer {
     width: 100%;
     margin-top: 4em;
 }
-#contact {
-/*    margin: auto;*/
+
+/*
+#contact-title {
+    margin: auto;
 }
+*/
+
+#icon-container {
+    margin: auto;
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#icon-container li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 
 #icon-container a {
     transition: 0.5s;
-    color: #949494 !important;
+/*    color: #949494 !important;*/
+    color: white !important;
 }
 
 #icon-container a:hover {
-    color: white !important;
+    color: black !important;
 }
