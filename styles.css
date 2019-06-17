@@ -114,7 +114,7 @@ nav span, nav a {
     height: 100px;
 }
 #pic-title {
-    height: 260px;
+    height: 16.25em;
     margin-top: 8em;
 }
 .white-text {
@@ -125,8 +125,6 @@ nav span, nav a {
 }
 .text-image-container-text {
     width: 100%;
-    background-color: #1c1c1c;
-    color: #949494;
     padding: 1.5rem 1.5rem;
 }
 .text-image-container-text .link {
@@ -141,4 +139,8 @@ nav span, nav a {
     position: relative;
     display: block;
     margin: auto;
+}
+.black-grey {
+    background-color: #1c1c1c;
+    color: #949494;
 }
