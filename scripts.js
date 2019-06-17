@@ -2,13 +2,13 @@
     updateContainer(width);
     updateBCBF(width);
     updateCodeImage(width);
-    $("#test").text(width); //testing
+    //$("#test").text(width); //testing
 
     //when the window resizes
     $(window).on('resize', function () {
         if ($(this).width() != width) {
             width = $(this).width();
-            $("#test").text(width); //testing temporary
+            //$("#test").text(width); //testing temporary
             updateContainer(width);
             updateBCBF(width);
             updateCodeImage(width);
