@@ -1,3 +1,7 @@
+    $(".lato").each(function() {
+        $("this").css("font-family", "'Lato', sans-serif");
+    });
+
     var width = $(window).width();
     updateContainer(width);
     updateBCBF(width);
