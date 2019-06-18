@@ -122,13 +122,12 @@ main {
     }
 }
 
-#top-nav span,
-#top-nav a {
+#top-nav span {
     color: white !important;
 }
 
-#top-nav {
-    background-color: black;
+nav {
+    background-color: #1c1c1c;
     /*#1c1c1c*/
 }
 
@@ -162,6 +161,7 @@ main {
 
 .text-image-container-text .link {
     color: #949494;
+    text-decoration: none;
 }
 
 .text-image-container-text .link:hover {
@@ -217,12 +217,12 @@ footer {
 }
 
 
-#icon-container a {
+nav a {
     transition: 0.5s;
 /*    color: #949494 !important;*/
-    color: white !important;
+    color: #949494 !important;
 }
 
-#icon-container a:hover {
-    color: black !important;
+#icon-container a:hover, #top-nav a:hover {
+    color: white !important;
 }

@@ -7,16 +7,18 @@
     //when the window resizes
     $(window).on('resize', function () {
         if ($(this).width() != width) {
+
+            // this reloads the page when the page width is changed by 200px to make sure the bcbf image loads at the right height/width
+            if ($(this).width() > (width + 200) || $(this).width() < (width - 200)) {
+                width = $(this).width();
+                location.reload();
+            }
+
             width = $(this).width();
             //$("#test").text(width); //testing temporary
             updateContainer(width);
             updateBCBF(width);
             updateCodeImage(width);
-        }
-
-        // this reloads the page when the page width is <= 370 to make sure the bcbf image loads at the right height/width
-        if (width <= 370) {
-            location.reload();
         }
     });
 
