@@ -168,8 +168,9 @@ nav {
 }
 
 .lato {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'LatoBold';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .text-image-container-image {
