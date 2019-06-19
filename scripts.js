@@ -1,10 +1,3 @@
-    $("body").addClass("lato");
-
-    //    if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
-    //        alert('I am chrome');
-    //    }
-
-
     var width = $(window).width();
     updateContainer(width);
     updateBCBF(width);

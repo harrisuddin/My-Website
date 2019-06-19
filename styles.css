@@ -211,14 +211,6 @@ footer {
     margin-right: 1rem;
 }
 
-#icon-container li:first-child {
-    margin-left: 0;
-}
-
-#icon-container li:last-child {
-    margin-right: 0;
-}
-
 #legal {
     width: 100%;
 }
@@ -250,5 +242,12 @@ footer {
 
     #cc {
         margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #name-copyright, #cc {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
