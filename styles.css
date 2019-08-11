@@ -139,14 +139,11 @@ nav {
     background-color: #1c1c1c;
 }
 
-#pic-title div {
+#pic-title img {
     /*change div to img later*/
     border-radius: 50%;
     display: block;
     margin: auto;
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
 }
 
 #pic-title {
