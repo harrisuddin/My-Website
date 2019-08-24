@@ -243,7 +243,9 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-    #name-copyright, #cc {
+
+    #name-copyright,
+    #cc {
         padding-left: 1em;
         padding-right: 1em;
     }

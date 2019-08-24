@@ -74,7 +74,7 @@
             $("#web").text("<websites/>.");
             count++;
         } else {
-            document.getElementById("loop-title").innerHTML = "Hi, I'm Harris.<br>I'm a 1<sup>st</sup> Year CS Student at <a class='link' href='https://www.hw.ac.uk'>HWU.</a>";
+            document.getElementById("loop-title").innerHTML = "Hi, I'm Harris.<br>I'm a 2<sup>nd</sup> Year CS Student at <a class='link' href='https://www.hw.ac.uk'>HWU.</a>";
             count = 1;
         }
     }
@@ -91,6 +91,7 @@
         }
     });
 
+    // when hovering over this element, show the div which gives credit to the photographer and change the opacity of the element with id code-image
     $("#code-image-container").hover(
 
         function () {
@@ -109,6 +110,7 @@
         }
     );
 
+    // go to the top of the page
     function goTop() {
         window.scrollTo(0, 0);
     }
