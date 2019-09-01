@@ -217,6 +217,11 @@ footer {
     width: 100%;
 }
 
+#name-copyright {
+    margin: auto;
+}
+
+/*
 #cc {
     word-wrap: break-word;
     color: #949494;
@@ -225,19 +230,24 @@ footer {
     line-height: inherit;
     font-size: 0.75rem;
 }
+*/
 
 @media screen and (max-width: 500px) {
     #legal .navbar-brand {
         margin: auto;
     }
 
+/*
     #cc {
         text-align: center;
         margin: auto;
     }
+*/
 }
 
+/*
 @media screen and (min-width: 501px) {
+
     #name-copyright {
         margin-right: auto;
     }
@@ -255,3 +265,4 @@ footer {
         padding-right: 1em;
     }
 }
+*/
